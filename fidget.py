@@ -8,7 +8,20 @@ Exercises
 4. Make it go forwards and backwards.
 """
 
-from turtle import *
+from turtle import clear
+from turtle import right
+from turtle import forward
+from turtle import dot
+from turtle import back
+from turtle import update
+from turtle import ontimer
+from turtle import setup
+from turtle import hideturtle
+from turtle import tracer
+from turtle import width
+from turtle import onkey
+from turtle import listen
+from turtle import done
 
 state = {'turn': 0}
 
