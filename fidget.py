@@ -22,6 +22,7 @@ from turtle import width
 from turtle import onkey
 from turtle import listen
 from turtle import done
+from turtle import onscreenclick
 
 state = {'turn': 0}
 
@@ -59,12 +60,17 @@ def flick():
     """Flick fidget spinner."""
     state['turn'] += 10
 
+def flickClick(x,y):
+    "Flicks fidget spinner with left click"
+    state['turn'] += 10
+
 
 setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
 width(20)
 onkey(flick, 'space')
+onscreenclick(flickClick, btn=1)
 listen()
 animate()
 done()
