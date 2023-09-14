@@ -60,7 +60,8 @@ def flick():
     """Flick fidget spinner forwards."""
     state['turn'] += 50
 
-def flickClick(x,y):
+
+def flickClick(x, y):
     "Flicks fidget spinner backwards with left click"
     state['turn'] += -50
 
