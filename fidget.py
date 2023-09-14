@@ -57,12 +57,12 @@ def animate():
 
 
 def flick():
-    """Flick fidget spinner."""
+    """Flick fidget spinner forwards."""
     state['turn'] += 50
 
 def flickClick(x,y):
-    "Flicks fidget spinner with left click"
-    state['turn'] += 50
+    "Flicks fidget spinner backwards with left click"
+    state['turn'] += -50
 
 
 setup(420, 420, 370, 0)
